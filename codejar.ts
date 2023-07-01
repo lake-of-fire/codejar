@@ -548,6 +548,7 @@ export function CodeJar(editor: HTMLElement, highlight: (e: HTMLElement, pos?: P
     save,
     restore,
     recordHistory,
+    handleUndoRedo,
     destroy() {
       for (let [type, fn] of listeners) {
         editor.removeEventListener(type, fn)
